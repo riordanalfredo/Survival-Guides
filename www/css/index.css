@@ -1,4 +1,5 @@
- * {
+@import url("material-icons.css"); 
+* {
     padding: 0;
     margin: 0;
   }
@@ -18,7 +19,6 @@ html, .main {
 section {
     min-height: 100%;
 }
-
 body{
     height:100%;
     background-image: url("../img/bg.png");
@@ -32,6 +32,7 @@ body{
 }
 
 footer{
+    position: static;
     background-color: #0d1f2d;
     color: white;  
 }
@@ -57,7 +58,38 @@ footer{
     background-color:white;
     margin: 20 20 20 20;
     padding: 20 20 20 20;
+    
+    
 }
 h1{
     color:#0d1f2d;
+}
+
+@media (min-width:1025px){
+.pembuka{
+    margin-left:30%;
+    margin-right:30%;
+}
+}
+
+@media only screen and (min-width:1025px) {
+            .hide-on-desktop, * [aria-labelledby='hide-on-desktop'] {
+                display: none;
+                max-height: 0;
+                overflow: hidden;
+            }
+        }
+.exit {
+    float:right;
+    margin-left:84%;
+    margin-top:1%;
+    
+}
+
+.demo-layout-transparent {
+  background-image: url("../img/bg.png") center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  color:black;
 }
