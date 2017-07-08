@@ -105,13 +105,14 @@
 </div>
     
 </body>
-     
-    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  
+    
+    <!-- <script type="text/javascript" charset="utf-8" src="cordova.js"></script>  -->
     <script type="text/javascript" charset="utf-8">         
         
 
 document.addEventListener("deviceready", onDeviceReady, false);
-
+        
+        
 function onDeviceReady() {
     
       $(document).ready(function(){
@@ -148,30 +149,11 @@ function onDeviceReady() {
     set_body_height();
   });
         
-/*
-var anj = window.location.href;
-var tot = anj + "#section2";
-history.pushState(null, null, location.href); 
-window.onpopstate = function(event) {
-
-    if(anj !== tot){
-        
-           console.log("okey")
-          
-           
-    }else{
-        
-        window.location.href="";
-        history.go(1)
-    }
-}*/
-    
    document.addEventListener("backbutton", ShowExitDialog, false);
 }
 
         
 // Dialog box when back button is pressed
-
  function ShowExitDialog() {
         navigator.notification.confirm(
                 ("Do you want to Exit?"), // message
@@ -181,8 +163,8 @@ window.onpopstate = function(event) {
         );
 
     }
+        
 // Call exit function
-
  function alertexit(button){
 
         if(button=="1" || button==1)
@@ -193,9 +175,7 @@ window.onpopstate = function(event) {
         }
 
 }        
-        
-
-    </script>
+</script>
 
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 
